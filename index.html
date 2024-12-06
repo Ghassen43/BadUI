@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bad UI Challenge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="font-size: 6em; text-align: center; color: magenta">
+        Bad UI Challenge
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="https://404notfound.fr">À propos</a></li>
+          <li><a href="#form">Formulaire</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="form">
+        <h2 style="text-align: center; font-size: 3em">Formulaire inutile</h2>
+        <form>
+          <label for="name">Nom (obligatoire mais inutilisable) :</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Tapez ici... ou pas."
+            required
+          />
+
+          <br /><br />
+
+          <label for="email">Email (jamais valide) :</label>
+          <input type="email" id="email" placeholder="nom@email.com" required />
+
+          <br /><br />
+
+          <label>
+            <input type="checkbox" id="terms" /> J'accepte les termes (ou pas)
+          </label>
+
+          <br /><br />
+
+          <button type="submit" class="vibrating-button">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p style="text-align: center; font-size: 10px; color: green">
+        © 2024 - Fait pour frustrer
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
